@@ -57,7 +57,6 @@ function game(num) {
     let scorePlayer = 0;
     let scoreComputer = 0;
 
-    // Play rounds
     for (let i = 0; i < num; i++) {
 
         const playerSelection = prompt();
@@ -68,12 +67,10 @@ function game(num) {
         else if (result === -1) scoreComputer++;
     }
 
-    // Display the result
     if (scorePlayer > scoreComputer) console.log("You won");
     else if (scorePlayer === scoreComputer) console.log("Tie");
     else console.log("You lost");
     console.log(`${scorePlayer} - ${scoreComputer}`);
 }
 
-// Play the game
 game(5);
